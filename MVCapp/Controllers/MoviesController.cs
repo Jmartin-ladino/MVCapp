@@ -20,12 +20,12 @@ namespace MVCapp.Controllers
         }
 
         // GET: Movies
-        public async Task<IActionResult> Index()
-        {
-              return _context.Movie != null ? 
-                          View(await _context.Movie.ToListAsync()) :
-                          Problem("Entity set 'MVCappContext.Movie'  is null.");
-        }
+        //public async Task<IActionResult> Index()
+        ////{
+        ////      return _context.Movie != null ? 
+        ////                  View(await _context.Movie.ToListAsync()) :
+        ////                  Problem("Entity set 'MVCappContext.Movie'  is null.");
+        ////}
 
         // GET: Movies/Details/5
         public async Task<IActionResult> Details(int? id)
